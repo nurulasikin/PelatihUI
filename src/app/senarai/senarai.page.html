@@ -1,0 +1,58 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue; text-align: center ;"><p>SENARAI PEMBIAYAAN</p></span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content fullscreen="true" class="background-image text-center">
+  <ion-card button (click)="onClick()" style="border-radius: 10px; background: #93CAED;">
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="9">
+          <ion-card-title>
+            <h1 style="color: black;">14/02121</h1>
+          </ion-card-title>
+        </ion-col>
+        <ion-col size="3">
+          <h2 style="color: black;">AKTIF</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p style="color: black;">Pinjaman Lepasan Sekolah</p>
+          <p style="color: black;">Konvensional</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card button (click)="onClick()" style="border-radius: 10px; background: #93CAED;">
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="9">
+          <ion-card-title>
+            <h1 style="color: black;" >14/02121</h1>
+          </ion-card-title>
+        </ion-col>
+        <ion-col size="3">
+          <h2 style="color: black;">AKTIF</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <p style="color: black;">Pinjaman Lepasan Sekolah</p>
+          <p style="color: black;">Konvensional</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

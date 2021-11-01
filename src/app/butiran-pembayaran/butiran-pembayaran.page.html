@@ -1,0 +1,186 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue; text-align: center ;"><p>BUTIRAN BAYARAN</p></span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content >
+   
+  
+    <ion-card style="background: rgb(240, 237, 237); border-radius: 5px;">
+      <ion-card-content >
+        <ion-row>
+          <ion-col size="7">
+            <ion-card-title>
+              <b><h2 style="color: black;">Bayaran Balik Pembiayaan</h2></b>
+            </ion-card-title>
+          </ion-col>
+          <ion-col size="5" style="text-align: center;">
+            <h1>RM 3,681.87</h1>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <p>No Akuan : 16/01617</p>
+            <p>Baki Terkini : RM 13,148.39</p>
+            <p>Baki Tunggakan : RM 3,681.87</p>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  
+  
+  
+
+  <ion-card>
+    <ion-card-content>
+      <ion-label>
+        Cara Pembayaran
+      </ion-label>
+      <ion-item  (ionChange)="segmentChanged($event)">
+        <ion-select placeholder="Sila Pilih">
+          <ion-select-option value="razer">RazerPay Cash 7e</ion-select-option>
+          <ion-select-option value="bank">Perbankan Internet</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <br>
+
+      <div *ngIf="selectedSegment == 'razer'" style="text-align: center;" >
+        <img style="height: 100px;" src="/assets/image/logo_RazerCash.png" />
+      </div>
+
+      <div *ngIf="selectedSegment == 'bank'" >
+        <ion-list >
+          <ion-radio-group >       
+            <ion-item >
+              <img style="height: 100px;" src="/assets/image/logo-affin-islamic.png" />
+              <ion-radio slot="start" value="affin"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <img style="height:100px;" src="/assets/image/logo-ambank.png" />
+              <ion-radio slot="start" value="ambank"></ion-radio>
+            </ion-item>
+        
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-kuwait-finance.png" />
+              <ion-radio slot="start" value="kuwait"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-ocbc.png" />
+              <ion-radio slot="start" value="ocbc"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-hsbc.png" />
+              <ion-radio slot="start" value="hsbc"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-alliance-bank.png" />
+              <ion-radio slot="start" value="alliance"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-standard-chartered.png" />
+              <ion-radio slot="start" value="standard"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-bank-rakyat.png" />
+              <ion-radio slot="start" value="rakyat"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-uob.png" />
+              <ion-radio slot="start" value="uob"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-public-bank.png" />
+              <ion-radio slot="start" value="public"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-bank-muamalat.png" />
+              <ion-radio slot="start" value="muamalat"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-rhb.png" />
+              <ion-radio slot="start" value="rhb"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-hong-leong-bank.png" />
+              <ion-radio slot="start" value="leong"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-bank-islam.png" />
+              <ion-radio slot="start" value="islam"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-bsn.png" />
+              <ion-radio slot="start" value="bsn"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-cimb-bank.png" />
+              <ion-radio slot="start" value="cimb"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-maybank.png" />
+              <ion-radio slot="start" value="maybank"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+              <img style="height: 70%;" src="/assets/image/logo-fpx.png" />
+              <ion-radio slot="start" value="fpx"></ion-radio>
+            </ion-item>
+
+          </ion-radio-group>
+        </ion-list>
+      </div>
+
+      <br>
+      <div style="text-align: center;">
+        <ion-label >
+          Jumlah Bayaran :RM 3,891.87
+        </ion-label>
+      </div>
+
+      <br>
+      <div style="float: right;">
+        <ion-button slot="start" (click)="Bayar()" expand="default" fill="solid" color="primary" shape="default">
+          BAYAR
+        </ion-button>
+        <ion-button slot="end" (click)="kembali()" expand="default" fill="solid" color="warning" shape="default">
+        kembali
+        </ion-button>
+        </div>
+     
+    </ion-card-content>
+  </ion-card>
+
+
+
+  </ion-content>
+  
+  
+  
+  
+  
+    
+

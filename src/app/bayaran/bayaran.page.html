@@ -1,0 +1,79 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue;">BAYARAN</span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+ 
+   <!-- <ion-card-content> -->
+    <!-- <div style="overflow-x:auto;"> -->
+   
+      <table class="styled-table" style="text-align: center;">
+        <thead>
+            <tr>
+              <th>Bil</th>
+              <th>No Akaun</th>
+              <th>Baki Tertunggak(RM)</th>
+              <th>Baki Terkini (RM)</th>
+              <th>Amaun Bayaran (RM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>
+                1	
+              </td>
+              <td>16/01617
+              </td>
+              <td>3,681.87</td>
+              <td>13,148.39</td>
+              <td>3,681.87</td>
+            </tr>
+            <tr class="active-row">
+              <td>
+                2
+              </td>
+              <td>14/01617
+              </td>
+              <td>3,681.87</td>
+              <td>13,148.39</td>
+              <td>5,681.87</td>
+             
+          
+           
+            <!-- and so on... -->
+         </tbody>
+    </table>
+    
+      
+    <!-- </div> -->
+    
+<!-- </ion-card-content> -->
+
+
+ <div style="float: right;">
+  <ion-button slot="end" style="font-size: 0.8em" fill="solid" color="primary" (click)="next()">
+    Seterusnya
+  </ion-button>
+</div>
+
+
+</ion-content>
+
+
+
+
+
+  
+  
+  
+  

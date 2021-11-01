@@ -1,0 +1,36 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue;">TUKAR KATA LALUAN</span>
+   
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+     <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="exitApp()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card>
+    <ion-card-content>
+      <ion-card-content class="ion-text-center">
+        <img style="border-radius: 1000px; height:100px; width: 100px;" src="/assets/image/mypic.jpg" />
+      </ion-card-content>
+      <h5 class="ion-text-center" style="color: black;">KEMASKINI KATA LALUAN</h5>
+  
+<br>
+<div class="buttons-action" style="color: black;">
+  <ion-input  placeholder="Kata Laluan Baru :" style="padding-left:10px important; font-family:'Arial'"></ion-input><br>
+  <ion-input  placeholder="Pengesahan Kata Laluan:" style="padding-left:10px important; font-family:'Arial'"></ion-input><br>
+  
+</div>
+<ion-button (click)="tukar()" class="" expand="block" fill="solid" color="primary" style="text-transform: none;">SIMPAN</ion-button>
+  
+    </ion-card-content>
+    </ion-card>
+
+
+
+</ion-content>
+

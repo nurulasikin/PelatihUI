@@ -1,0 +1,175 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue;">KALKULATOR PEMBIAYAAN</span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content >
+
+  <ion-content fullscreen="true" class="background-image text-center">
+  <ion-card-content>
+ 
+    <ion-card style="background-color: rgb(253, 249, 249); border-radius: 5px;">
+      <ion-card-content>
+        <ion-label style="color: black;">
+          Jenis Pembayaran Pembiayaan
+        </ion-label>
+        <ion-item>
+          <ion-select value="Sila Pilih" interface="action-sheet" placeholder="Sila Pilih">
+            <!-- <ion-select-option value="enable">Enable</ion-select-option>                -->
+            <ion-select-option value="LPKonvensional">Lepasan Sekolah Konvensional </ion-select-option>
+            <ion-select-option value="LPSyariah">Lepasan Sekolah Patuh Syariah</ion-select-option>
+            <ion-select-option value="PKonvensional">Pekerja Konvensional</ion-select-option>
+            <ion-select-option value="PSyariah">Pekerja Patuh Syariah</ion-select-option>
+          </ion-select> 
+        </ion-item>
+    
+        <ion-label style="color: black;">
+          Jumlah Pembiayaan (RM)
+        </ion-label>
+          <ion-item>
+            <ion-input placeholder="">
+            </ion-input>
+          </ion-item>
+          
+          <!-- <ion-label>
+            Peratus Faedah
+          </ion-label>
+          <ion-item>
+            <ion-label>
+              3.5%
+            </ion-label>
+          </ion-item> -->
+    
+         
+        
+      </ion-card-content>
+      <div style="float: right;">
+        <ion-button (click)="profil()">
+          Kira &nbsp; <br><i class="fa-regular fa-calculator"></i>
+        </ion-button>
+        <ion-button  color="warning" (click)="back()">
+           Set Semula  <br>
+        </ion-button>
+        </div>
+    </ion-card>
+    
+    
+    <!-- <div>
+      <ion-card style="background-color: rgb(253, 249, 249); border-radius: 20px;">
+        <ion-card-content>
+          <ion-label>
+            Ansuran Bulanan (RM)
+          </ion-label>
+            <ion-item>
+              <ion-input value="4216.00">
+              </ion-input>
+            </ion-item>
+    
+            <ion-label>
+              Tempoh Ansuran (Bulan)
+            </ion-label>
+              <ion-item>
+                <ion-input value="46">
+                </ion-input>
+              </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </div> -->
+    
+    <!-- <ion-card style="background-color: rgb(253, 249, 249); border-radius: 20px;">
+      <ion-card-content>
+      <div style="overflow-x:auto; overflow-y: auto;">
+      <table style="text-align: center;">  
+  
+      <tr style="background-color: rgb(19, 16, 16) ;">
+        <th>Bulan</th>
+        <th>Ansuran Bayaran (Sebulan)</th>
+        <th>Baki Pembayaran</th>
+      </tr>
+    
+    <tr>
+      <td>1</td>
+      <td>RM3216</td>
+      <td>RM31084	</td>
+    </tr>
+    
+    <tr>
+      <td>2</td>
+      <td>RM2216</td>
+      <td>RM26868</td>
+    </tr>
+    
+    <!-- <tr>
+      <td>
+        3
+      </td>
+      <td>
+        RM4216
+      </td>
+      <td>
+        RM12652	
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        4
+      </td>
+      <td>
+        RM4216
+      </td>
+      <td>
+        RM8436	
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        5
+      </td>
+      <td>
+        RM4216
+      </td>
+      <td>
+        RM4220	
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        6
+      </td>
+      <td>
+        RM4216
+      </td>
+      <td>
+        RM4	
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        7
+      </td>
+      <td>
+        RM4
+      </td>
+      <td>
+        RM0
+      </td>
+    </tr> --> 
+    
+    <!-- </table>
+    
+    </div>
+    </ion-card-content>
+    </ion-card> -->
+  </ion-card-content>
+</ion-content>

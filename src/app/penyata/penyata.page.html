@@ -1,0 +1,379 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue; text-align: center ;"><p>PENYATA AKAUN</p></span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<!-- <ion-content>
+
+  <ion-card>
+    <ion-card-content>
+     
+     <div style="overflow-x:auto; overflow-y: auto;">
+     <table style="width:100%">
+ 
+     <tr>
+     <th>Bil</th>
+     <th>	Kod Urusniaga</th>
+     <th>	Tarikh Transaksi</th>
+     <th>No Rujukan</th>
+     <th> Catatan</th>
+     <th>Amaun</th>
+    <th>Pokok</th>
+    <th>Caj Tadbir</th>
+    <th>Baki Semasa</th>
+     </tr>
+ 
+     <tr>
+      <td>
+        01	
+      </td>
+      <td>4100</td>
+      <td>01/11/2019</td>
+      <td>TIADA	</td>
+      <td>PELARASAN LEBIHAN BAYARAN BALIK PINJAMAN </td>
+      <td>750.00</td>
+      <td>-750.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>
+        <ion-button fill="clear" > print
+               <i class="fa-regular fa-print"></i> 
+        </ion-button>
+      </td>
+     </tr>
+
+     <tr>
+      <td>
+        02
+      </td>
+      <td>4100</td>
+      <td>01/11/2019</td>
+      <td>TIADA	</td>
+      <td>PELARASAN LEBIHAN BAYARAN BALIK PINJAMAN </td>
+      <td>750.00</td>
+      <td>-750.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>
+        <ion-button fill="clear" > print
+               <i class="fa-regular fa-print"></i> 
+        </ion-button>
+      </td>
+     </tr>
+     <tr>
+      <td>
+        02
+      </td>
+      <td>4100</td>
+      <td>01/11/2019</td>
+      <td>TIADA	</td>
+      <td>PELARASAN LEBIHAN BAYARAN BALIK PINJAMAN </td>
+      <td>750.00</td>
+      <td>-750.00</td>
+      <td>0.00</td>
+      <td>0.00</td>
+      <td>
+        <ion-button fill="clear" > print
+               <i class="fa-regular fa-print"></i> 
+        </ion-button>
+      </td>
+     </tr>
+ 
+     </table>
+     </div>
+ </ion-card-content>
+ </ion-card> 
+ 
+  <div>
+   <ion-button slot="end" style="font-size: 0.9em" fill="solid" color="primary" (click)="next()">
+     seterusnya
+   </ion-button>
+ </div>
+ 
+ 
+ </ion-content>  -->
+ 
+<!-- <ion-content fullscreen="true" class="background-image text-center">
+
+      <div style="overflow-x:auto; overflow-y: auto;">
+    <table style="text-align: center;">  
+      <tr >
+        <th>
+          Bil
+        </th>
+        <th>
+          Kod Urusniaga
+        </th>
+        <th>
+          Tarikh Transaksi
+        </th>
+        <th>
+          No Rujukan
+        </th>
+        <th>
+          Catatan
+        </th>
+        <th>
+          Amaun
+        </th>
+        <th>
+          Pokok
+        </th>
+        <th>
+          Caj Tadbir
+        </th>
+        <th>
+          Baki Semasa
+        </th>
+    
+      </tr>
+    
+      <tr>
+      <td>
+        52	
+      </td>
+      <td>
+        4100	
+      </td>
+      <td>
+        01/11/2019	
+      </td>
+      <td>
+        TIADA	
+      </td>
+      <td>
+        PELARASAN LEBIHAN BAYARAN BALIK PINJAMAN DARI AKAUN 14/06454 KE AKAUN 15/01987 & 17/02861
+      </td>
+      <td>
+        750.00	
+      </td>
+      <td>
+        -750.00
+      </td>
+      <td>
+        0.00
+      </td>
+      <td>
+        0.00
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        51	
+      </td>
+      <td>
+        5100	
+      </td>
+      <td>
+        25/10/2019	
+      </td>
+      <td>
+        TIADA	
+      </td>
+      <td>
+        PELARASAN SBG BAYARAN BALIK PINJAMAN-CAGARAN INSURANS (PTPK.AK.400-6/1 JILID 29 (10) BTH 18/10/19	
+      </td>
+      <td>
+        -750.00	
+      </td>
+      <td>
+        750.00
+      </td>
+      <td>
+        0.00
+      </td>
+      <td>
+        -750.00
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        50	
+      </td>
+      <td>
+        4100	
+      </td>
+      <td>
+        16/10/2019	
+      </td>
+      <td>
+        TIADA	
+      </td>
+      <td>
+        PELARASAN LEBIHAN BAYARAN BALIK PINJAMAN DARI AKAUN 14/06454 KE AKAUN 15/01987
+      </td>
+      <td>
+        91.41	
+      </td>
+      <td>
+        -91.41
+      </td>
+      <td>
+        0.00
+      </td>
+      <td>
+        0.00
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        49
+      </td>
+      <td>
+        0300	
+      </td>
+      <td>
+        25/09/2019	
+      </td>
+      <td>
+        19/DC00467	
+      </td>
+      <td>
+        JOMPAY-BAYARAN BALIK ANSURAN PINJAMAN
+      </td>
+      <td>
+        - 91.41
+      </td>
+      <td>
+         91.41
+      </td>
+      <td>
+        0.00
+      </td>
+      <td>
+        - 91.41
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        48	
+      </td>
+      <td>
+        0300	
+      </td>
+      <td>
+        25/09/2019	
+      </td>
+      <td>
+        19/DC00467	
+      </td>
+      <td>
+        JOMPAY-BAYARAN BALIK ANSURAN PINJAMAN
+      </td>
+      <td>
+        - 4,214.11	
+      </td>
+      <td>
+        4,203.60
+      </td>
+      <td>
+        10.51
+      </td>
+      <td>
+        0.00
+      </td>
+    </tr>
+    
+    </table>
+    
+    </div>
+    </ion-card-content>
+    </ion-card>
+    
+    </ion-content>
+</ion-content> -->
+
+<ion-content>
+  <div style="float: right;">
+    <ion-button slot="end" (click)="onClick()" fill="solid" color="danger" style="font-size: 0.9em; text-transform: none;">
+      <i class="fa-regular fa-print" ></i><br>
+      <span style="font-size: 9px;">Cetak Penyata</span>
+      
+    </ion-button>
+    </div>
+    <br>
+    <br>
+    <br>
+    
+  <!-- <ion-card-content> -->
+<ion-row>
+  <div style="overflow-x:auto;">
+   
+  <table >
+    <thead>
+        <tr>
+          <th>Bil</th>
+          <th>Keterangan</th>
+          <th>Amaun(RM)</th>
+          <th>Baki Terkini (RM)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+            1	
+          </td>
+          <td>(1000)CAJ TADBIR
+            <br> Tarikh Transaksi: 01/06/2021
+          </td>
+          <td>28.07</td>
+          <td>12682.42</td>
+        </tr>
+        <tr class="active-row">
+          <td>
+            2
+          </td>
+          <td>(1000)CAJ TADBIR
+            <br> Tarikh Transaksi: 01/08/2021
+          </td>
+          <td>27.39</td>
+          <td>12765.28	</td>
+         
+         </tr>
+         <tr>
+          <td>
+            3	
+          </td>
+          <td>(1000)CAJ TADBIR
+            <br> Tarikh Transaksi: 01/08/2021
+          </td>
+          <td>27.62</td>
+          <td>12737.89</td>
+        </tr>
+        <tr class="active-row">
+          <td>
+            4
+          </td>
+          <td>(5400)PEMBATALAN CAJ
+            <br> Tarikh Transaksi: 31/01/2019
+          </td>
+          <td>-151.55</td>
+          <td>12300.00	</td>         
+         </tr>
+         
+       
+        <!-- and so on... -->
+     </tbody>
+</table>
+
+  
+</div>
+</ion-row>
+
+  <!-- </ion-card-content> -->
+
+</ion-content>
+

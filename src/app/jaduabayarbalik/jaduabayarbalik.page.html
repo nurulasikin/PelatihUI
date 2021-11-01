@@ -1,0 +1,138 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue; text-align: center ;"><p>Jadual Bayaran Balik</p></span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+  
+<ion-content fullscreen="true" class="background-image text-center" style="padding-top: 0px;">
+  <ion-row>
+    <ion-col size="6">
+      <ion-card class="ion-text-center" style="background-color: #309fdb; color: white;justify-content: center; " >
+        <ion-card-header style="padding-bottom: 0px; font-size: 0.8em;">
+          <ion-card-tittle style="color: white; font-size: 12px;">No Akaun</ion-card-tittle><br>
+          <ion-card-tittle style="color: white; font-size: 12px;">14/06454</ion-card-tittle><br><br><br>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="ion-text-center" style="background-color: #309fdb; color: white;justify-content: center; " >
+        <ion-card-header style="padding-bottom: 0px; font-size: 0.8em;">
+          <ion-card-tittle style="color: white; font-size: 12px;">Jumlah Bayaran Balik</ion-card-tittle><br>
+          <ion-card-tittle style="color: white; font-size: 12px;">RM 5,850.27</ion-card-tittle><br><br>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="ion-text-center" style="background-color: #309fdb; color: white; justify-content: center;" >
+        <ion-card-header style="padding-bottom: 0px; font-size: 0.8em;">
+          <ion-card-title style="color: white; font-size: 12px;">Ansuran Bulanan</ion-card-title>
+          <ion-card-title style="color: white; font-size: 12px;">RM 91.41</ion-card-title><br>
+         
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+   
+
+    <ion-col size="6">
+      <ion-card class="ion-text-center" style="background-color: #309fdb; color: white;justify-content: center; " >
+        <ion-card-header style="padding-bottom: 0px; font-size: 0.8em;">
+          <ion-card-title style="color: white; font-size: 12px;">Bulan Ansuran</ion-card-title>
+          <ion-card-title style="color: white; font-size: 12px;">64</ion-card-title><br>
+          
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    </ion-row>
+
+    <div style="float: right;">
+      <ion-button slot="end" (click)="onClick()" fill="solid" color="danger" style="text-transform: none; font-size: 10px;">
+        <i class="fa-regular fa-print" ></i>
+        <span >Cetak Jadual</span>
+      </ion-button>
+      </div>
+  
+  <!-- <ion-card-content> -->
+  <table>
+    <tr>
+      <th>Bil</th>
+      <th>Bulan Ansuran</th>
+      <th>Pecahan Pokok</th>
+      <th>Baki Pokok</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>13.50 Caj Tadbir<br>06/2018</td>
+      <td>77.91</td>
+      <td>5,322.09</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>13.31 Caj Tadbir<br>07/2018</td>
+      <td>78.10</td>
+      <td>5,243.99</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>13.11 Caj Tadbir<br>08/2018</td>
+      <td>78.30</td>
+      <td>5,165.69</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>12.91 Caj Tadbir<br>09/2018</td>
+      <td>78.50</td>
+      <td>5,087.19</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>12.72 Caj Tadbir<br>10/2018</td>
+      <td>78.69</td>
+      <td>5,008.50</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>12.52 Caj Tadbir<br>11/2018</td>
+      <td>78.89</td>
+      <td>4,929.61</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>12.32 Caj Tadbir<br>12/2018</td>
+      <td>79.09</td>
+      <td>4,850.52</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>12.13 Caj Tadbir<br>061/2019</td>
+      <td>79.281</td>
+      <td>4,771.24</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>11.93 Caj Tadbir<br>02/2019</td>
+      <td>79.48</td>
+      <td>4,691.76</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>11.73 Caj Tadbir<br>03/2019</td>
+      <td>79.68</td>
+      <td>4,612.08</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>11.53 Caj Tadbir<br>04/2019</td>
+      <td>79.88</td>
+      <td>4,532.20</td>
+    </tr>
+  </table>
+<!-- </ion-card-content> -->
+
+</ion-content>

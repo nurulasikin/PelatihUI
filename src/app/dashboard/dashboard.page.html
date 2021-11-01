@@ -1,0 +1,262 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue;"></span>
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <!-- <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+      <i class="fa-duotone fa-envelope"></i> -->
+      <i class="fa-duotone fa-envelope fa-2xl" style="--fa-primary-color: crimson; --fa-secondary-color: black; --fa-secondary-opacity: 1.0; text-transform: none;"></i><br>
+    </ion-button>
+    <!-- <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="next()">
+   
+     <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;">
+    </ion-button> -->
+    
+    <!-- <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i> -->
+    <!-- </ion-button> -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true" class="background-image text-center">
+  <ion-grid fixed>
+    <ion-row >
+      <ion-col size="12">
+        <ion-card style="border-radius: 30px;">
+          <ion-row><br>
+            <ion-col class="ion-text-left" style="padding: 10px;">
+              <i class="fa-duotone fa-circle-user fa-2xl" ></i><span class="ion-padding" style="color: black; font-size: 0.9em;">Selamat Datang Nurul</span>
+            </ion-col>         
+          </ion-row>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+      <!-- <ion-grid fixed > -->
+        <ion-row >
+          <ion-col size="12">
+            <ion-card style="border-radius: 30px; ">
+              <ion-row>
+      
+                <ion-col class="ion-text-center" size="4">
+                   <ion-button (click)="sejarahpembayaran()" expand="block" fill="clear" shape="round"> 
+                    <i class="fa-duotone fa-money-check-dollar-pen fa-2xl" style="--fa-primary-color: crimson; --fa-secondary-color: black; --fa-secondary-opacity: 1.0; text-transform: none;"></i>
+                     <!-- <img src ="/assets/image/icons8-payment-history-64.png"style="width:40px; height:40px">
+                    -->
+                    
+                  </ion-button>
+                  <ion-label style="color: black; font-size: 10px;">Sejarah Pembayaran</ion-label>
+                </ion-col>
+                
+                <ion-col class="ion-text-center" size="4">
+                  <ion-button (click)="semakanstatus()" expand="block" fill="clear" shape="round">
+                    <i class="fa-duotone fa-check-to-slot fa-2xl" style="--fa-primary-color: crimson; --fa-secondary-color: black; --fa-secondary-opacity: 1.0; text-transform: none;"></i>
+                    <!-- <img src ="/assets/image/icons8-check-list-65.png" style="width: px; height: px"><br> -->
+                  </ion-button>
+                  <ion-label style="color: black; font-size: 10px;">Semakan<br> Status</ion-label>
+                </ion-col>
+      
+                <ion-col class="ion-text-center" size="4">
+                  <ion-button (click)="kalkulatorpembiayaan()" expand="block" fill="clear" shape="round">
+                    <i class="fa-duotone fa-calculator fa-2xl" style="--fa-primary-color: crimson; --fa-secondary-color: black; --fa-secondary-opacity: 1.0; text-transform: none;"></i><br>
+                  </ion-button>
+                  <ion-label style="font-size: 10px; color: black;">Kalkulator Pembiayaan</ion-label>
+                </ion-col>
+              </ion-row>
+      
+            </ion-card>
+          </ion-col>
+      
+        </ion-row>
+
+<ion-card style="border-radius: 30px;">
+<ion-grid fixed>
+  <ion-row>
+    <ion-col size="12">
+      <ion-card class="ion-text-center" style="background-color: #4392b9; color: white">
+        <ion-card-header>
+          <ion-card-subtitle style="color: white ; font-size: 0.9em;" >Jumlah Akaun Pembiayaan</ion-card-subtitle>
+          <ion-card-title style="color: white; font-size: 0.9em;">2</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="ion-text-center" style="background-color: #13b6cf; color: white">
+        <ion-card-header>
+          <ion-card-subtitle style="color: white; font-size: 0.9em;">Jumlah Pembiayaan</ion-card-subtitle>
+          <ion-card-title style="color: white; font-size: 0.9em;">RM30,000.00</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="ion-text-center" style="background-color: #2ebfbc; color: white">
+        <ion-card-header>
+          <ion-card-subtitle style="color: white; font-size: 0.9em;">Jumlah Baki Tertunggak</ion-card-subtitle>
+          <ion-card-title style="color: white; font-size: 0.9em;">RM10,231.00</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-card>
+
+
+  <ion-card style="border-radius: 30px;" class="radius" [scrolly]="false"> pengumuman <br>
+    
+    <swiper [config]="swiperConfig" [autoplay]="{delay: 1000,disableOnInteraction: false}">
+
+      <ng-template swiperSlide>
+        <div class="slide-container">
+          <img src="/assets/image/sl-320.jpg">
+        </div>
+      </ng-template>
+      <ng-template swiperSlide>
+        <div class="slide-container">
+          <img src="/assets/image/sl-319.jpg"> 
+        </div>
+      </ng-template>
+      <ng-template swiperSlide><div class="slide-container">
+        <img src="/assets/image/sl-320.jpg"> 
+      </div>
+    </ng-template>
+    </swiper>
+</ion-card>
+
+</ion-content>
+      
+
+      
+
+     
+   
+<!-- <ion-card style="border-radius: 10px; background: #ffffff; ">
+      <ion-card-content>
+
+ 
+  
+    <div class="row">
+        <div class="column">
+          <div class="card" text=" "style="background-color: #ffd1dc; ">
+            <h3 style="color: black;">Jumlah Akaun</h3>
+            <p style="color: black;">2</p>
+            <p style="color: black;">Pembiayaan</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card" text=" "style="background-color: #ffb8c9 ;">
+            <h3 style="color: black;">Jumlah </h3> 
+            <p style="color: black;">Pinjaman</p>
+            <p style="color: black;">RM30,000.00</p>
+          </div>
+        </div>
+            
+        <div class="column">
+            <div class="card" text=" "style="background-color: #ff9eb5 ;"> 
+            <h3 style="color: black;">Jumlah Baki  </h3>
+            <p style="color: black;">Tertunggak</p>
+            <p style="color: black;">RM0</p>
+          </div>
+        </div>
+
+       
+    </div>  
+  </ion-card-content>
+</ion-card>  -->
+
+<!-- <ion-row>
+  <ion-col size="12">
+   <ion-card class="ion-text-center" style="background-color: #309fdb; color: white;" >
+          <ion-card-header>
+            <ion-card-title style="color: white;">2</ion-card-title>
+            <ion-card-subtitle style="color: white;">Jumlah Akaun Pembiayaan</ion-card-subtitle>
+            
+          </ion-card-header>
+          <ion-card-content>  </ion-card-content>
+        </ion-card>
+  
+        <ion-card class="ion-text-center" style="background-color: #13b6cf; color: white;" >
+          <ion-card-header>
+            <ion-card-subtitle style="color: white;">Jumlah Pembiayaan</ion-card-subtitle>
+            <ion-card-title style="color: white;">RM 30,000.00</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+     
+        <ion-card class="ion-text-center" style="background-color: #2ebfbc; color: white;" >
+          <ion-card-header>
+            <ion-card-subtitle style="color: white;">Jumlah Baki Tertunggak</ion-card-subtitle>
+            <ion-card-title style="color: white;">RM 10,231.00</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      
+  </ion-col>
+</ion-row>   -->
+
+
+
+<!-- <ion-slides pager>
+ 
+  <ion-slide style="background-color: #309fdb">
+    <h2>Jumlah Akaun<br> 2 <br>Pembiayaan</h2>
+ 
+    
+  </ion-slide>
+ 
+  <ion-slide style="background-color: #13b6cf">
+    <h2>Jumlah Pinjaman<br>  <br>RM30,000.00</h2>
+  </ion-slide>
+
+
+  <ion-slide style="background-color: #2ebfbc">
+    <h2>Jumlah Baki Tertunggak<br>  <br> RM 10,231.00</h2>
+  </ion-slide>
+
+</ion-slides>
+</div>
+</ion-card-content>   -->
+
+
+
+
+
+<!-- <ion-row> 
+  <ion-col size="12" >
+      <ion-card-content>
+        <ion-list> 
+          <ion-item-sliding>
+            <ion-item style="background-color: #13b6cf;">
+              
+              <ion-label style="color: black;">          
+                <h2 class="t-MediaList-title">No Akaun : 12/032521</h2>
+                <p class="t-MediaList-desc" style="font-size: 12px;">Jenis Pembiayaan : Konvensional</p>
+                <p class="t-MediaList-desc" style="font-size: 12px;">Baki Terkini : RM 0.00</p>
+                <span slot="end" class="ion-text-center"><span style="color: #2ebf8c;">Tiada Tunggakan</span></span>
+              </ion-label>
+               <span slot="end" class="ion-text-center"><h6><span style="color: #2ebf8c;">Tiada <br> Tunggakan</span></h6></span> -->
+            <!-- </ion-item>
+            <ion-item-options side="end" >
+              <ion-item-option (click)="ledger('12/032521')" style="background: #309fdb">Semak</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+        
+          <ion-item-sliding>
+            <ion-item>
+              <ion-label style="color: black;">          
+                <h2 class="t-MediaList-title">No Akaun : 14/06454</h2>
+                <p class="t-MediaList-desc" style="font-size: 12px;">Jenis Pembiayaan : Konvensional</p>
+                <p class="t-MediaList-desc" style="font-size: 12px;">Baki Terkini : RM 0.00</p>
+                <span slot="end" class="ion-text-center"><span style="color: #2ebf8c;">Tiada Tunggakan</span></span>
+              </ion-label>
+              
+            </ion-item>
+            <ion-item-options side="end">
+              <ion-item-option (click)="ledger('14/06454')"  style="background: #309fdb;">Semak</ion-item-option>
+            </ion-item-options>
+          </ion-item-sliding>
+
+        </ion-list>
+      </ion-card-content>
+  </ion-col>
+</ion-row>  -->
+
+
+

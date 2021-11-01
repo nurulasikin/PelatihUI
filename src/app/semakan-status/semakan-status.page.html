@@ -1,0 +1,90 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue; text-align: center ;"><p>SEMAKAN STATUS</p></span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-row>
+     
+    <ion-col size="6" style=" padding-right: 25px;">
+      <ion-card button (click)="check()" class="ion-text-center " style="background-color: #428cff; color: white; width:100% ; height: 85%;" >
+        <ion-card-header style="color: white;">
+          <br>
+          <img src ="/assets/image/icons8-student-male-64.png" style=" color:ghostwhite; width: 50px; height: 50px;color: gainsboro;">
+          <ion-card-title style="color: white; font-size: 12px;" >Permohonan Pembiayaan</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="6" style=" padding-right: 25px;">
+      <ion-card button (click)="tangguh()" class="ion-text-center " style="background-color: #428cff; color: white; width:100% ; height: 85%;" >
+        <ion-card-header style="color: white;">
+          <br>
+          <img src ="/assets/image/icons8-check-book-100.png" style="width: 50px; height: 50px;">
+          <ion-card-title style="color: white; font-size: 12px;">Penangguhan</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6" style=" padding-right: 25px;">
+      <ion-card button (click)="Jadual()" class="ion-text-center " style="background-color: #428cff; color: white; width:100% ; height: 85%;" >
+        <ion-card-header style="color: white;">
+          <br>
+          <img src ="/assets/image/icons8-calendar-60.png" style="width: 50px; height: 50px;">
+          <ion-card-title style="color: white; font-size: 12px;">Penjadualan</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+ 
+    <ion-col size="6" style=" padding-right: 25px;">
+      <ion-card button (click)="potongan()" class="ion-text-center " style="background-color: #428cff; color: white; width:100% ; height: 85%;" >
+        <ion-card-header style="color: white;">
+          <br>
+          <img src ="/assets/image/icons8-paper-money-50.png" style="width: 50px; height:50px;">
+          <ion-card-title style="color: white; font-size: 12px;">Potongan Gaji</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="6" style=" padding-right: 25px;">
+      <ion-card button (click)="Keilatan()" class="ion-text-center " style="background-color: #428cff; color: white; width:100% ; height: 85%;" >
+        <ion-card-header style="color: white;">
+          <br>
+          <img src ="/assets/image/icons8-wheelchair-50.png" style="width: 50px; height:50px;">
+          <ion-card-title style="color: white; font-size: 12px;">Keilatan/Sakit Mental</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+
+    <ion-col size="6" style=" padding-right: 25px;">
+      <ion-card class="ion-text-center " style="background-color: #428cff; color: white; width:100% ; height: 85%;" >
+        <ion-card-header style="color: white;">
+          <br>
+          <img src ="/assets/image/icons8-questions-30.png" style="width: 50px; height: 50px; ">
+          <ion-card-title style="color: white; font-size: 12px;">Aduan & Pertanyaan</ion-card-title>
+        </ion-card-header>
+      </ion-card>
+    </ion-col>
+    </ion-row>
+    <!-- <div style="float: right;">
+    <ion-button slot="end" style="font-size: 0.9em" fill="solid" color="primary" (click)="back()">
+      kembali
+    </ion-button>
+  </div> -->
+
+
+
+</ion-content>

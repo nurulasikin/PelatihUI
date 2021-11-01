@@ -1,0 +1,70 @@
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue;">OTP</span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i>
+      
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-content class="background" style="padding-top: 50px;">
+    <div class="content" style="padding-top:55px;">
+      <ion-card>
+      <ion-card-content>
+          <br>
+              <h4 class="ion-text-center" style="color: black;" >Nombor OTP telah dihantar kepada email anda.Sila semak email anda.</h4><br>
+              
+              
+      
+      <br>
+    <div class="buttons-action">
+        <ion-label style="text-align: center; color: black">
+        <ion-input  placeholder="Masukkan Nombor OTP" type="required"  style="padding-left:10px important; font-family:'Arial'"></ion-input><br>
+      </ion-label>
+        <ion-button (click)="sahkan()" class="" expand="block" fill="solid" color="primary">SAHKAN NOMBOR OTP</ion-button>
+      </div>
+    </ion-card-content>
+    </ion-card>
+      
+    </div>
+
+   
+   
+
+</ion-content> -->
+
+<ion-content>
+   
+  <div style="height: 100%;width: 100%; display: flex; align-items: center; justify-content: center;"><br>
+
+    <ion-card style="width: 100%; border-radius: 30px;">
+      <ion-card-content>
+        <ion-row>
+          <div style="display: flex; align-items: center; justify-content: center; padding-top:  2px; ">
+            <img src ="/assets/image/Logoesf.png"  >    
+        </div>
+          <ion-label class="ion-text-center" style="color: black; font-size: 0.9em;" >Nombor OTP telah dihantar kepada email anda.Sila semak email anda.</ion-label><br>
+          <ion-col size="12">
+            
+            <form>
+              <ion-item style="text-align:center; font-size: 0.9em;">
+                <ion-label>
+                  <ion-text color="danger">*</ion-text>
+                </ion-label>
+                <ion-input placeholder="Masukkan Nombor OTP" required type="text"></ion-input>
+              </ion-item>
+              <br>
+              <ion-button (click)="sahkan()" class="" expand="block" fill="solid" color="primary" style="text-transform: none; border-radius: 10px; font-size: 0.9em;">SAHKAN NOMBOR OTP</ion-button>
+            </form>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-card>
+  </div>
+  </ion-content>

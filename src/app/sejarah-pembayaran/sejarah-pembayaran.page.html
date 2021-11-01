@@ -1,0 +1,82 @@
+
+<ion-header class="ion-no-border">
+  <ion-toolbar translucent> <span class="ion-padding" style="color: aliceblue; text-align: center ;"><p>SEJARAH PEMBAYARAN</p></span>
+    <ion-button slot="start" style="font-size: 0.9em" fill="clear" color="light" (click)="back()">
+      <i class="fa-solid fa-angle-left fa-2xl" style="color: ghostwhite;"></i><br>
+     <!-- <br> <img src ="/assets/image/mypic.jpg" style="width: 35px; height: 35px ; border-radius: 15px; text-align: right;"> -->
+    </ion-button>
+    
+    <ion-button slot="end" style="font-size: 0.9em" fill="clear" color="light" (click)="logout()">
+      <i class="fa-duotone fa-right-from-bracket fa-2xl" style="color: ghostwhite;"></i>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- <ion-card-content> -->
+
+    <div style="overflow-x:auto;">
+     
+    <table class="styled-table" style="text-align: center;">
+      <thead>
+          <tr>
+            <th>Bil</th>
+            <th>Keterangan</th>
+            <th>Status</th>
+            <th>Amaun Bayar (RM)</th>
+            <th>Cetak Resit</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+            <td>
+              1	
+            </td>
+            <td>Tarikh Transaksi: 18-10-2021 10:10:25
+              <br> No Resit : M20210001
+              <br> Mod Bayaran: FPX Mobile, Maybank2u
+            
+            </td>
+            <td>sedang Diproses</td>
+            <td>4.21</td>
+            <td>
+            
+              <ion-button fill="clear" >
+                    <i class="fa-regular fa-print"></i>
+              </ion-button>
+            </td>
+          </tr>
+          <tr class="active-row">
+            <td>
+              2
+            </td>
+            <td>Tarikh Transaksi: 18-10-2021 10:10:25
+              <br> No Resit : M20210001
+              <br> Mod Bayaran: FPX Mobile, CimbCliks
+            </td>
+            <td>sedang Diproses</td>
+            <td>5.02</td>
+            <td>
+              <ion-button fill="clear" >
+                    <i class="fa-regular fa-print"></i>
+              </ion-button>
+            </td>
+           
+           </tr>
+           
+           
+         
+          <!-- and so on... -->
+       </tbody>
+  </table>
+  </div>
+    <!-- </ion-card-content> -->
+ 
+ 
+ </ion-content>
+ 
+  
+
+
+
